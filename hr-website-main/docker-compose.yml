@@ -1,0 +1,9 @@
+version: '3.9'
+
+services:
+  hr-website:
+    image: ${DOCKER_IMAGE:-hr-website:latest}
+    container_name: hr-website
+    restart: always
+    ports:
+      - "80:80"
